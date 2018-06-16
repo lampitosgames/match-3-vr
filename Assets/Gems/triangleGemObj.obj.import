@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/triangleGemObj.obj-ebf1dc211f095ecfb292b1eacf8f7d88.mesh"
+
+[deps]
+
+files=[ "res://.import/triangleGemObj.obj-ebf1dc211f095ecfb292b1eacf8f7d88.mesh" ]
+
+source_file="res://Assets/Gems/triangleGemObj.obj"
+source_md5="a64ee5cf6348586edab94882792b8064"
+
+dest_files=[ "res://.import/triangleGemObj.obj-ebf1dc211f095ecfb292b1eacf8f7d88.mesh", "res://.import/triangleGemObj.obj-ebf1dc211f095ecfb292b1eacf8f7d88.mesh" ]
+dest_md5="19168036331dfe2d9b15a551a3d41587"
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

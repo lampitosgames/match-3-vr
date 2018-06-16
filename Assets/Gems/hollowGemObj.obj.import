@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/hollowGemObj.obj-5dfb79239198d0808b8cb898ebafcd94.mesh"
+
+[deps]
+
+files=[ "res://.import/hollowGemObj.obj-5dfb79239198d0808b8cb898ebafcd94.mesh" ]
+
+source_file="res://Assets/Gems/hollowGemObj.obj"
+source_md5="27c17d3e97cd441625a57fa2e7bdd18b"
+
+dest_files=[ "res://.import/hollowGemObj.obj-5dfb79239198d0808b8cb898ebafcd94.mesh", "res://.import/hollowGemObj.obj-5dfb79239198d0808b8cb898ebafcd94.mesh" ]
+dest_md5="0d2be05e6419018dc2c6b685c68abd0d"
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

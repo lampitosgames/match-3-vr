@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/diamondGemObj.obj-2a10d0e97a7f868514d77f58cdd6a5a4.mesh"
+
+[deps]
+
+files=[ "res://.import/diamondGemObj.obj-2a10d0e97a7f868514d77f58cdd6a5a4.mesh" ]
+
+source_file="res://Assets/Gems/diamondGemObj.obj"
+source_md5="e251b22e7950598f9ea8ccddcd3b2c90"
+
+dest_files=[ "res://.import/diamondGemObj.obj-2a10d0e97a7f868514d77f58cdd6a5a4.mesh", "res://.import/diamondGemObj.obj-2a10d0e97a7f868514d77f58cdd6a5a4.mesh" ]
+dest_md5="90bbaa041293b538b76e12484721bfe2"
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
