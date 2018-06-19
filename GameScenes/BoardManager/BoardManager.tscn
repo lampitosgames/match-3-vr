@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://GameScenes/BoardManager/BoardManager.gd" type="Script" id=1]
+
+
+
+
+[node name="BoardManager" type="Node" index="0"]
+
+script = ExtResource( 1 )
+xSize = 6
+ySize = 6
+zSize = 6
+
+

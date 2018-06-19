@@ -7,6 +7,10 @@ signal trigger_released(controllerID)
 #Emitted when the trigger axes change
 signal trigger_axis(value, controllerID)
 
+var controllerPointer = load("res://GameScenes/ControllerPointer/ControllerPointer.tscn")
+
+var VRWorldScale = 10
+
 var Controllers = {}
 var ControllerData = {}
 
@@ -32,7 +36,7 @@ func _process(var delta):
 		ControllerData[_id]["trigger_axis"] = Controllers[_id].get_joystick_axis(2)
 		
 		#Grab the current transform
-		ControllerData[_id]["transform"] = Controllers[_id].global_transform
+		ControllerData[_id]["transform"] = ControllerData[_id]["pointer"].global_transform
 		
 		#If the trigger axis is being held, emit signal
 		if (ControllerData[_id]["trigger_axis"] > 0):
@@ -47,10 +51,20 @@ func add_controller(var controllerID, var controllerObj):
 		controllerObj.connect("button_pressed", VRState, "_on_controller_button_pressed", [controllerID])
 		controllerObj.connect("button_release", VRState, "_on_controller_button_released", [controllerID])
 		
+		#add pointer node
+		var pointerInstance = controllerPointer.instance()
+		pointerInstance.set_name("pointer")
+		controllerObj.add_child(pointerInstance)
+		#Give the pointer a controllerID
+		pointerInstance.parentControllerID = controllerID
+		#Properly place the pointer relative to the controller: 0, -0.015, -0.045
+		pointerInstance.translation = Vector3(0.0, -0.15, -0.45)
+		
 		ControllerData[controllerID] = {
 			"trigger_axis": 0,
 			"face_x_axis": 0,
 			"face_y_axis": 0,
+			"pointer": pointerInstance,
 			"transform": controllerObj.global_transform
 		}
 		

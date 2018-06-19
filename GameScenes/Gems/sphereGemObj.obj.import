@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/sphereGemObj.obj-71b7884f2f70396a15e0ca34c74bcb18.mesh"
+
+[deps]
+
+files=[ "res://.import/sphereGemObj.obj-71b7884f2f70396a15e0ca34c74bcb18.mesh" ]
+
+source_file="res://GameScenes/Gems/sphereGemObj.obj"
+source_md5="e515c24a6e6d47ce39dca383b82c155b"
+
+dest_files=[ "res://.import/sphereGemObj.obj-71b7884f2f70396a15e0ca34c74bcb18.mesh", "res://.import/sphereGemObj.obj-71b7884f2f70396a15e0ca34c74bcb18.mesh" ]
+dest_md5="ed4589cad407e8ef49130862bcda0acb"
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

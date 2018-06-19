@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/starGemObj.obj-b4ea46d1ae91892c023ea48421c52e77.mesh"
+
+[deps]
+
+files=[ "res://.import/starGemObj.obj-b4ea46d1ae91892c023ea48421c52e77.mesh" ]
+
+source_file="res://GameScenes/Gems/starGemObj.obj"
+source_md5="6c61371a8bd080be97258a415f1a007a"
+
+dest_files=[ "res://.import/starGemObj.obj-b4ea46d1ae91892c023ea48421c52e77.mesh", "res://.import/starGemObj.obj-b4ea46d1ae91892c023ea48421c52e77.mesh" ]
+dest_md5="45c6a08f43f3869ca62685c1019c1f37"
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
