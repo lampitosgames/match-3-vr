@@ -23,7 +23,7 @@ size = Vector2( 100, 100 )
 subdivide_width = 5
 subdivide_depth = 5
 
-[node name="Main" type="Spatial" index="0"]
+[node name="Main" type="Spatial"]
 
 script = ExtResource( 1 )
 
@@ -69,8 +69,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="MovableObject" parent="." index="3" instance=ExtResource( 4 )]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, 1.5 )
-activeMoveType = 0
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 6, 1.5 )
+activeMoveType = 1
 
 
 [editable path="OVRFirstPerson"]

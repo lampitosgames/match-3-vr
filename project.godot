@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [autoload]
 
 VRState="*res://AutoLoad/VRState.gd"
+Utils="*res://AutoLoad/Utils.gd"
 
 [display]
 
