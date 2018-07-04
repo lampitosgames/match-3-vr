@@ -3,7 +3,7 @@ extends Area
 #TODO: Add haptic feedback to UI
 
 #Enum to determine how this object responds to being grabbed and dragged
-enum MoveType {FREE_MOVE, SINGLE_AXIS_CONSTRAINED, COORDINATE_AXIS_CONSTRAINED}
+enum MoveType {FREE_MOVE = 0, SINGLE_AXIS_CONSTRAINED = 1, COORDINATE_AXIS_CONSTRAINED = 2}
 export (MoveType) var activeMoveType = MoveType.FREE_MOVE
 #Constraint for single-axis movement
 export(Vector3) var singleAxisConstraint = Vector3(1.0, 0.0, 0.0)
@@ -31,7 +31,7 @@ func _ready():
 	VRState.connect("trigger_pressed", self, "_on_grab")
 	VRState.connect("trigger_released", self, "_on_release")
 	
-	coordAxisConstraint = self.global_transform.basis
+	coordAxisConstraint = self.transform.basis
 	
 	#Connect area collisions. Mostly used for detecting collision with controller pointers
 	self.connect("area_entered", self, "_on_area_entered")
@@ -75,7 +75,7 @@ func _process(delta):
 			#If the calculated move is larger than the maximum displacement, clamp to maximum displacement
 			calculatedMove = Utils.vector_clamp(calculatedMove, maxDisplacement)
 		#Finally, move the object
-		self.global_transform.origin = startingPos + calculatedMove
+		self.transform.origin = startingPos + calculatedMove
 
 #Handler for controller trigger signal
 func _on_grab(controllerID):
@@ -87,9 +87,9 @@ func _on_grab(controllerID):
 		#Bind to the controller
 		boundToID = controllerID
 		#Store current position
-		startingPos = global_transform.origin
+		startingPos = transform.origin
 		#Store relative position
-		boundOffset = global_transform.origin - VRState.ControllerData[boundToID]["transform"].origin
+		boundOffset = transform.origin - VRState.ControllerData[boundToID]["transform"].origin
 
 func _on_release(controllerID):
 	if (controllerID == boundToID):
