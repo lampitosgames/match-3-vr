@@ -9,10 +9,7 @@ path="res://.import/diamondGemObj.obj-11c6fb26bf85aef0821c0832caddaba7.mesh"
 files=[ "res://.import/diamondGemObj.obj-11c6fb26bf85aef0821c0832caddaba7.mesh" ]
 
 source_file="res://GameScenes/Gems/diamondGemObj.obj"
-source_md5="e251b22e7950598f9ea8ccddcd3b2c90"
-
 dest_files=[ "res://.import/diamondGemObj.obj-11c6fb26bf85aef0821c0832caddaba7.mesh", "res://.import/diamondGemObj.obj-11c6fb26bf85aef0821c0832caddaba7.mesh" ]
-dest_md5="90bbaa041293b538b76e12484721bfe2"
 
 [params]
 

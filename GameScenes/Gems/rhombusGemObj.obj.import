@@ -9,10 +9,7 @@ path="res://.import/rhombusGemObj.obj-0bed7e683bd3ddada522e066ad0fef8b.mesh"
 files=[ "res://.import/rhombusGemObj.obj-0bed7e683bd3ddada522e066ad0fef8b.mesh" ]
 
 source_file="res://GameScenes/Gems/rhombusGemObj.obj"
-source_md5="44dd13c1d295049f4dd8acf59d1c41c3"
-
 dest_files=[ "res://.import/rhombusGemObj.obj-0bed7e683bd3ddada522e066ad0fef8b.mesh", "res://.import/rhombusGemObj.obj-0bed7e683bd3ddada522e066ad0fef8b.mesh" ]
-dest_md5="a78221e0ca508215856aeee1138048ea"
 
 [params]
 
